@@ -1,0 +1,36 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <template if:false={loaded}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <template if:true={loaded}>
+        <div class="container">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_1-of-2">
+                    <img src={cellFrame} class="game-container">
+                    <img id="snakeImg" class="snakeImg" src={snakeLogo} alt="Snake Logo"></img>
+                    <canvas id="game-canvas" class="game-canvas" lwc:dom="manual"></canvas>
+                    <div id="score" class="score">Score: {score}</div>
+                    <img id="gameOver" class="gameOver" src={gameOverLogo} alt="Game Over"></img>
+                    <button class="start-button" onclick={startGame}>Start</button>
+                    <div class="footer">
+                        <p>Original Game: Snake II™ - ©1998 NOKIA CORPORATION - Developer: Taneli Armanto.</p>
+                        <p>LWC Adaptation and Interpretation Developer: Andres Pereyra.</p>
+                        <p>Game Sounds Source: PAC-MAN™ & ©1980 BANDAI NAMCO Entertainment Inc.</p>
+                        <p>Cellphone Image: NOKIA 1100 - NOKIA CORPORATION.</p>
+                    </div>
+                </div>
+                <div class=" boardColum slds-col slds-size_1-of-2">
+                    <lightning-card class="referenceCard">
+                        <p>Press 'Start' to play</p>
+                        <p>Use ← ↑ → ↓ </p>
+                        <p> Ranking: </p>
+                    </lightning-card>
+                        <c-l-w-c-arcade-child oncontinue={handleContinue}></c-l-w-c-arcade-child>
+                </div>
+            </div>
+        </div>
+    </template>
+</template>

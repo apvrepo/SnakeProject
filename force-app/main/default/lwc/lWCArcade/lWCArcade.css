@@ -1,0 +1,132 @@
+.html {
+  max-width: 100%;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+
+.game-container {
+  height: 60em;
+  width: 65em;
+  display: block;
+  position: absolute;
+
+}
+
+.game-canvas {
+  display: block;
+  position: absolute;
+  top: 15em;
+  left: 11.3em;
+  border: 10px solid black;
+  border-radius: 10px;
+  background-color: transparent;
+  /*  #9AC503 */
+  image-rendering: pixelated;
+  /* Ensures pixelated look on modern displays */
+}
+
+.score {
+  display: block;
+  position: absolute;
+  top: 3.3em;
+  left: 3.8em;
+  font-size: 3em;
+  font-weight: bold;
+  color: #000;
+  font-family: monospace;
+  /* Monospace font to mimic the classic look */
+}
+
+.footer {
+  left: 13em;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+  margin-top: 50rem;
+}
+
+.background {
+  background-color: white;
+}
+
+.start-button{
+  border: 0px !important;
+  border-color: #A5A5A5;
+  border-radius: 100px !important;
+  height: 4em;
+  width: 4em;
+  color: red;
+  font-size: 2em;
+  background-color: #B8B8B8;
+  position: absolute;
+  top: 24.5em;
+  left: 6em;
+}
+
+.start-button:focus, .start-button:active, .start-button:focus-visible {
+  border: 0px !important;
+  border-color: #A5A5A5;
+  border-radius: 100px !important;
+  height: 4em;
+  width: 4em;
+  color: red;
+  font-size: 2em;
+  background-color: #B8B8B8;
+  position: absolute;
+  top: 24.5em;
+  left: 6em;
+}
+
+.windowViewMode-normal .oneContent .active .lafPageHost ::after {
+  background-color: white !important;
+}
+
+.container {
+  position: relative;
+  top:2em;
+}
+
+.snakeImg {
+  display: block;
+  position: absolute;
+  height: 27em;
+  top: 12em;
+  left: 10em;
+}
+
+.gameOver {
+  display: block;
+  position: absolute;
+  height: 40em;
+  top: 5em;
+  left: 11em;
+}
+
+.noDisplay {
+  display: none;
+}
+
+.slds-th__action-button .slds-dropdown-trigger .slds-dropdown-trigger_click::after {
+  display: none !important;
+}
+
+.referenceCard {
+  margin-left: 6em;
+  margin-top: 1em;
+  display: block;
+  width: 20em;
+  position: relative;
+  max-width: 50em;
+  font-size: 2em;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+.boardColum{
+  position: relative !important;
+    top: -2em !important;
+}

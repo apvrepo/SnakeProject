@@ -1,0 +1,28 @@
+<template>
+    <!--     
+    <p>load: {load}</p> -->
+    <template if:false={load}>
+        <lightning-spinner class="spinnerStyle" alternative-text="Loading" size="large"></lightning-spinner>
+    </template>
+    <template if:true={load}>
+        <template for:each={wiredUsers} for:item="user">
+            <div class="cardsContainer" key={user.Id}>
+                <lightning-card title="User" icon-name="custom:custom48">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_2-of-3">
+                            <ul class="slds-m-around_medium">
+                                <li class="individualCard">
+                                    <p>{user.Name}</p>
+                                    <p> Score: {user.GameScore__c}</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="slds-col slds-size_1-of-3">
+                            <img class="profilePic" src={user.FullPhotoUrl} />
+                        </div>
+                    </div>
+                </lightning-card>
+            </div>
+        </template>
+        <!--   --> </template>
+</template>
