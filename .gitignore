@@ -43,3 +43,13 @@ $RECYCLE.BIN/
 **/__pycache__/
 **/.venv/
 **/venv/
+
+# Others
+.config/
+.husky/
+.vscode/
+sfdx-project.json
+package.json
+prettier
+jest.config.js
+package.json

@@ -19,6 +19,6 @@
             <property name="recordId" type="String" />
         </targetConfig>
     </targetConfigs> 
-    -->
-    <runtimeNamespace>vlocity_cmt</runtimeNamespace>
+        <runtimeNamespace>vlocity_cmt</runtimeNamespace>
+        -->
 </LightningComponentBundle>
