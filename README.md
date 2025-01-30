@@ -24,8 +24,13 @@ Screen captures of my short LWC Demo!
 
 ## POST-DEPLOY Manual Steps: 
 1- Go to SETUP --> Apps --> App Manager
+
 2- Find the App with Developer Name  = 'ArcadeApp1' then click the option 'Edit' of it. 
+
 3- On the App Settings column, select the tab 'User Profiles' then add the profiles that you want to allow to see the App (Suggestion 'System Administrator', 'Standard User', and 'Standard Platform User') 
+
 4- Make Sure the changes are saved
+
 5- Go back to the main Home page and Refresh the web browser tab (CTRL + F5)
+
 6- Finally you can go to the 'App Launcher' and you should be able to see the new App 'Arcade' 
